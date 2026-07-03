@@ -1,0 +1,49 @@
+:root {
+    color-scheme: dark;
+
+    font-family: var(--font);
+    font-size: var(--font-size);
+    color: var(--font-color);
+}
+
+.content>div:nth-child(1) {
+    width: 25%;
+    max-height: max-content;
+}
+
+.content>div:nth-child(2) {
+    width: 75%;
+}
+
+#s-preset-list>div:hover li {
+    cursor: pointer;
+}
+
+#s-input-pattern {
+    width: 100%;
+    border: none;
+    background: none;
+    font-size: 1.2rem;
+    font-family: var(--font);
+}
+
+#s-input-pattern:focus {
+    border: none;
+    outline: none;
+}
+
+#s-result-list>* {
+    border-bottom: 1px solid var(--listbox-border-color);
+}
+
+#s-result-list>*:last-child {
+    border-bottom: none;
+}
+
+#s-result-list>*>* {
+    padding: 0.5rem;
+}
+
+#s-result-list>*>*:nth-child(2) {
+    color: #ff8844;
+}

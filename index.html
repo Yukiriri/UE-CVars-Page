@@ -1,0 +1,49 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>Unreal Engine Console Variables and Commands</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/png" href="https://www.unrealengine.com/cosmos/static/favicons/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="https://www.unrealengine.com/cosmos/static/favicons/favicon.svg">
+    <link rel="stylesheet" href="./css/layout.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./res/bg.css">
+    <script src="./js/cvars/5.6.0-en.js"></script>
+    <script src="./js/cvars/5.5.4-en.js"></script>
+    <script src="./js/cvars/5.4.4-en.js"></script>
+    <script src="./js/cvars/5.3.2-en.js"></script>
+    <script src="./js/cvars/5.2.1-en.js"></script>
+    <script src="./js/cvars/5.1.1-en.js"></script>
+    <script src="./js/cvars/5.0.3-en.js"></script>
+    <script src="./js/cvars/4.27.2-en.js"></script>
+    <script src="./js/cvars/4.26.2-en.js"></script>
+    <script src="./js/script.js" defer></script>
+</head>
+<body>
+    <div class="bg-img">
+        <div class="bg-mask"></div>
+    </div>
+    <div class="content-header card-mask h-fill h-center">
+    </div>
+    <div class="content h-fill h-center">
+        <div>
+            <div class="card card-mask">
+                <div class="listbox-header">UE Version</div>
+                <div class="listbox" id="s-ver-list"></div>
+            </div>
+            <div class="card card-mask">
+                <div class="listbox-header">Popular CVar</div>
+                <div class="listbox" id="s-preset-list"></div>
+            </div>
+        </div>
+        <div>
+            <div class="card card-mask">
+                <input type="text" placeholder="Search" id="s-input-pattern">
+            </div>
+            <div class="card card-mask">
+                <div class="listbox" id="s-result-list"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,98 @@
+:root {
+
+    --bg-mask-color: rgba(0, 0, 0, 0.2);
+    --font: Cascadia Mono, Noto Sans;
+    --font-size: 1rem;
+    --font-color: #cccccc;
+
+    --card-mask-color: rgba(0, 0, 0, 0.5);
+    --card-blur: 4rem;
+    --card-saturate: 1.2;
+    --card-border-color: rgba(127, 127, 127, 0.2);
+    --card-shadow-color: rgba(0, 0, 0, 0.8);
+
+    --listbox-border-color: #7f7f7f;
+
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+.h-fill {
+    display: flex;
+}
+
+.h-center {
+    text-align: center;
+}
+
+.v-fill {
+    display: block;
+}
+
+.v-center {
+    display: flex;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bg-img,
+.bg-mask {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+}
+
+.bg-mask {
+    background-color: var(--bg-mask-color);
+}
+
+.content-header>*:first-child,
+.content {
+    width: 50%;
+    margin: 0 auto;
+}
+
+.card {
+    margin: 1rem;
+    border-radius: 1rem;
+    padding: 0.5rem;
+    text-align: left;
+    transition: all 0.2s;
+}
+
+.card-mask {
+    background-color: var(--card-mask-color);
+    backdrop-filter: blur(var(--card-blur));
+    filter: saturate(var(--card-saturate));
+    border: 1px solid var(--card-border-color);
+    box-shadow: 0px 0px 1rem var(--card-shadow-color);
+}
+
+.listbox-header {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid var(--listbox-border-color);
+    padding: 0.25rem;
+    font-size: 1.5rem;
+}
+
+.listbox>div {
+    padding: 0.25rem;
+}
+
+.listbox>div>.lv1 {
+    margin-left: 1rem;
+}
+
+.listbox>div>.lv2 {
+    margin-left: 2rem;
+}
+
+.listbox>div>.lv3 {
+    margin-left: 3rem;
+}
