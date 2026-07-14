@@ -1,6 +1,4 @@
 var cvars544 = [
-    // all cvars and command in this form: 
-    // {name: "a.ParallelAnimEvaluation", help:"If 1, animation evaluation will be run across the task graph system. If 0, evaluation will run purely on the game thread"},
     { name: "a.AccumulateLocalSpaceAdditivePose.ISPC", help: "Whether to use ISPC optimizations for accumulating local space additive pose", type: "Var" },
     { name: "a.AnimNode.AimOffsetLookAt.Debug", help: "Toggle LookAt AimOffset debug", type: "Var" },
     { name: "a.AnimNode.AimOffsetLookAt.Enable", help: "Enable/Disable LookAt AimOffset", type: "Var" },

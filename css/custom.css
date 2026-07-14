@@ -1,0 +1,36 @@
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+.content>div:nth-child(1) {
+    width: 25%;
+    max-width: 25%;
+    max-height: max-content;
+}
+
+.content>div:nth-child(2) {
+    width: 75%;
+    max-width: 75%;
+}
+
+#id-result-list>* {
+    display: block;
+    border-bottom: 1px solid var(--listbox-border-color);
+}
+
+#id-result-list>*:hover {
+    cursor: unset;
+    background-color: unset;
+}
+
+#id-result-list>*:last-child {
+    border-bottom: none;
+}
+
+#id-result-list>*>* {
+    margin: 0.5rem 0;
+}
+
+#id-result-list>*>*:nth-child(2) {
+    color: #ff8844;
+}
